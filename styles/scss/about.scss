@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+
+  h1 {
+    text-align: center;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.2em;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .banner {
+    img {
+      width: 100%;
+    }
+  }
+}

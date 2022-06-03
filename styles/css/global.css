@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --color-black: #141414;
+  --color-white: #f1f1f1;
+  --color-gray500: #7c7c7c;
+  --color-gray700: #4e4e4e;
+  --color-blue500: blue;
+  --color-text: var(--color-black);
+  --color-heading: var(--color-gray500);
+  --color-link: var(--color-white);
+  scrollbar-width: thin;
+}
+
+:root ::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+:root ::-webkit-scrollbar-track {
+  background: var(--color-gray500);
+}
+
+:root ::-webkit-scrollbar-thumb {
+  background: var(--color-gray700);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+button,
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-link);
+  -webkit-text-decoration-color: currentColor;
+          text-decoration-color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: transparent;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=global.css.map */

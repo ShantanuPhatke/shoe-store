@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Shoe Store</title>
+
+    <link rel="stylesheet" href="./styles/css/global.css" />
+    <link rel="stylesheet" href="./styles/css/header.css" />
+    <link rel="stylesheet" href="./styles/css/shop.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="/" class="home-link"
+        ><img src="./assets/logo.svg" alt="shoe-store-logo" class="logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/shop.html">Shop Now</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="container">
+      <!-- Product card template -->
+      <template id="product-card-template">
+        <div class="product-card">
+          <img src="" alt="product-image" class="product-image" />
+          <div class="product-info">
+            <div class="product-name"></div>
+            <div class="product-price"></div>
+          </div>
+        </div>
+      </template>
+
+      <h1>Shop from Best of the best</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto
+        harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae
+        inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam.
+        Quis, veniam quas!
+      </p>
+      <hr />
+      <div class="product-cards-container" id="product-cards-container"></div>
+    </section>
+  </body>
+  <script type="module" src="./scripts/shop.js"></script>
+</html>

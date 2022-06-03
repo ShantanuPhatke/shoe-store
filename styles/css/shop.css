@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 0;
+  font-size: 2.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.container p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.container hr {
+  margin-bottom: 3rem;
+}
+
+.container .product-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.container .product-cards-container .product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+  border: 3px solid var(--color-gray500);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .product-cards-container .product-card img.product-image {
+  aspect-ratio: 1;
+  height: 20rem;
+}
+
+.container .product-cards-container .product-card .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+.container .product-cards-container .product-card .product-info .product-name {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.container .product-cards-container .product-card .product-info .product-price {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.container .product-cards-container .product-card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+/*# sourceMappingURL=shop.css.map */
