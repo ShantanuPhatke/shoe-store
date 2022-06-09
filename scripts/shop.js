@@ -6,6 +6,9 @@ for (const product of products) {
   const cardTemplate = document.querySelector('#product-card-template').content
 
   cardTemplate.querySelector('img').src = product.productImages[0]
+  cardTemplate.querySelector(
+    '.product-link'
+  ).href = `/product.html?productId=${product.id}`
   cardTemplate.querySelector('.product-name').textContent = product.name
   cardTemplate.querySelector('.product-price').textContent = product.price
 
