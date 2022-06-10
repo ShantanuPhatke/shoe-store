@@ -39,5 +39,104 @@
       </div>
     </section>
   </body>
-  <script type="module" src="./scripts/product.js"></script>
+
+  <!-- Script to populate product details -->
+  <script>
+    const products = [
+      {
+        id: '1',
+        name: 'shoe 1',
+        price: '4000 INR',
+        productImages: ['./assets/products/shoe1.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '2',
+        name: 'shoe 2',
+        price: '5000 INR',
+        productImages: ['./assets/products/shoe2.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '3',
+        name: 'shoe 3',
+        price: '6000 INR',
+        productImages: ['./assets/products/shoe3.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '4',
+        name: 'shoe 4',
+        price: '7000 INR',
+        productImages: ['./assets/products/shoe4.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '5',
+        name: 'shoe 5',
+        price: '8000 INR',
+        productImages: ['./assets/products/shoe5.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '6',
+        name: 'shoe 6',
+        price: '4000 INR',
+        productImages: ['./assets/products/shoe1.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '7',
+        name: 'shoe 7',
+        price: '5000 INR',
+        productImages: ['./assets/products/shoe2.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '8',
+        name: 'shoe 8',
+        price: '6000 INR',
+        productImages: ['./assets/products/shoe3.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '9',
+        name: 'shoe 9',
+        price: '7000 INR',
+        productImages: ['./assets/products/shoe4.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+      {
+        id: '10',
+        name: 'shoe 10',
+        price: '8000 INR',
+        productImages: ['./assets/products/shoe5.avif'],
+        description:
+          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iusto harum laudantium necessitatibus sint. Fuga, accusamus rerum recusandae inventore, nostrum laborum dolorum eum ducimus provident, fugiat ipsam. Quis, veniam quas!',
+      },
+    ]
+
+    const params = new URLSearchParams(window.location.search)
+
+    const productId = params.get('productId')
+
+    if (productId) {
+      const product = products.find((product) => product.id === productId)
+
+      document.querySelector('.product-image').src = product.productImages[0]
+      document.querySelector('.product-name').textContent = product.name
+      document.querySelector('.product-price').textContent = product.price
+      document.querySelector('.product-description').textContent =
+        product.description
+    }
+  </script>
 </html>
